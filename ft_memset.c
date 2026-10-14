@@ -1,14 +1,14 @@
 
 #include <stdio.h>
 
-void    *memset(void *s, int c, size_t n){
+void    *ft_memset(void *s, int c, size_t n){
 
     int i;
 
     i=0;
     
     while(i<n){
-        *(int *)s=c;
+        *(char *)s=c;
         s++;
         i++;
     }
