@@ -1,16 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
 void *ft_memcpy(void *dest, const void *src, size_t n)
 {
+    unsigned char  *new_dest;
+    const unsigned char *new_src;
     size_t i;
+
+    new_dest=dest;
+    new_src=src;
     i=0;
+    printf("dest:%s/src:%s nsize: %ld\n",(char *) dest,(char *) src,n);
     while(i<n){
-        *(char *)dest = *(char *)src;
-        dest++;
-        src++;
+        new_dest[i]=new_src[i];
         i++;
     }
+    printf("dest:%s/src:%s\n",(char *) dest,(char *) src);
     return dest;
 }
 
@@ -19,7 +25,7 @@ int main(void)
     int passed = 0;
     int failed = 0;
 
-    // TEST 1: Copy an integer
+    // // TEST 1: Copy an integer
     {
         int a = 20;
         int b = 10;
@@ -52,7 +58,7 @@ int main(void)
         }
         else
         {
-            printf("TEST 2: String copy:   %s FAIL\n",dest);
+            printf("TEST 2: String copy:%s FAIL\n",dest);
             failed++;
         }
     }
