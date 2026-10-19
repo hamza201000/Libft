@@ -1,3 +1,4 @@
+#include <stddef.h>
 size_t ft_strlen(char *c){
     size_t coun;
 
