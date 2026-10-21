@@ -29,6 +29,7 @@ int ft_atoi(const char *nptr)
     {
         return sng*value;
     }
+    
     return value;
 }
 
