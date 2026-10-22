@@ -25,10 +25,10 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
         return NULL;
     }
     // printf("s[start]:%zu\n",ft_strlen((char *)s));
-    while((size_t )i<len&&start<s_len)
+    while((size_t )start<len)
     {
         // printf("size:%c s[start]:%c\n",sub[i],s[start]);
-        printf("s[start]:%c\n",s[start]);
+        // printf("s[start]:%c\n",s[start]);
         sub[i]=s[start];
         start++;
         i++;

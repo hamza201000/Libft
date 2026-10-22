@@ -69,8 +69,8 @@ int main(void)
 {
     /* Basic numbers */
     test_atoi("0");
-    test_atoi("1");
-    test_atoi("42");
+    test_atoi("-111111111144444441111");
+    test_atoi("44444444444444444444442");
     test_atoi("123456");
     test_atoi("987654321");
 
