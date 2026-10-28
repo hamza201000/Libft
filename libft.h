@@ -18,4 +18,7 @@ typedef struct s_list
     struct s_list   *next;
 } t_list;
 
+t_list *ft_lstnew(void *content);
+void ft_lstclear(t_list **lst, void (*del)(void*));
+void ft_lstadd_back(t_list **lst, t_list *new);
 #endif

@@ -1,4 +1,5 @@
-#include <stddef.h>
+#include <stdio.h>
+
 size_t ft_strlen(char *c){
     size_t coun;
 
@@ -7,4 +8,8 @@ size_t ft_strlen(char *c){
         coun++;
     }
     return coun;
+}
+
+int main(){
+        printf("%zu",ft_strlen("hello"));
 }

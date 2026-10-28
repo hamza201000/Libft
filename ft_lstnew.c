@@ -17,25 +17,25 @@ t_list *ft_lstnew(void *content){
 
 
 
-int main(void)
-{
-    char str[] = "Hello";
-    t_list *node = ft_lstnew(str);
+// int main(void)
+// {
+//     char str[] = "Hello";
+//     t_list *node = ft_lstnew(str);
 
-    if (node && node->content == str)
-    {
-        str[0] = 'Y';
-        if (((char *)node->content)[0] == 'Y')
-            printf("PASS: original pointer stored\n");
-        else
-            printf("FAIL: content was copied\n");
-    }
-    else
-        printf("FAIL: node creation\n");
+//     if (node && node->content == str)
+//     {
+//         str[0] = 'Y';
+//         if (((char *)node->content)[0] == 'Y')
+//             printf("PASS: original pointer stored\n");
+//         else
+//             printf("FAIL: content was copied\n");
+//     }
+//     else
+//         printf("FAIL: node creation\n");
 
-    free(node);
-    return (0);
-}
+//     free(node);
+//     return (0);
+// }
 
 
 // int main ()
