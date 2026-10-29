@@ -1,7 +1,4 @@
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <bsd/string.h>
+#include "linft"
 
 
 char *ft_strnstr(const char *big, const char *little, size_t len)

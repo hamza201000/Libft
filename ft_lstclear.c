@@ -1,10 +1,10 @@
-#include <stdio.h>
-#include <stdlib.h>
+// #include <stdio.h>
+// #include <stdlib.h>
 #include "libft.h"
 
 
 
-// lnk1 -> lnk2 -> lnk3 -> lnk4 -> NULL
+
 
 
 void ft_lstclear(t_list **lst, void (*del)(void*))
@@ -22,16 +22,12 @@ void ft_lstclear(t_list **lst, void (*del)(void*))
         free(*lst);
         *lst=temp;
     }
-
-
-
-
 }
 
-void    del_content(void *content)
-{
-    free(content);
-}
+// void    del_content(void *content)
+// {
+//     free(content);
+// }
 
 
 

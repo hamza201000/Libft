@@ -1,59 +1,59 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "libft.h"
+// #include <stdio.h>
+// #include <stdlib.h>
+// #include <string.h>
+// #include "libft.h"
 
 
 
-static t_list *new_node(void *content)
-{
-    t_list *node = malloc(sizeof(t_list));
-    if (!node)
-        return NULL;
-    node->content = content;
-    node->next = NULL;
-    return node;
-}
+// static t_list *new_node(void *content)
+// {
+//     t_list *node = malloc(sizeof(t_list));
+//     if (!node)
+//         return NULL;
+//     node->content = content;
+//     node->next = NULL;
+//     return node;
+// }
 
-static void print_list(t_list *lst)
-{
-    while (lst)
-    {
-        printf("%s -> ", (char *)lst->content);
-        lst = lst->next;
-    }
-    printf("NULL\n");
-}
+// static void print_list(t_list *lst)
+// {
+//     while (lst)
+//     {
+//         printf("%s -> ", (char *)lst->content);
+//         lst = lst->next;
+//     }
+//     printf("NULL\n");
+// }
 
 
 
-static int list_size(t_list *lst)
-{
-    int size = 0;
-    while (lst)
-    {
-        size++;
-        lst = lst->next;
-    }
-    return size;
-}
+// static int list_size(t_list *lst)
+// {
+//     int size = 0;
+//     while (lst)
+//     {
+//         size++;
+//         lst = lst->next;
+//     }
+//     return size;
+// }
 
-static void free_nodes(t_list *lst)
-{
-    t_list *tmp;
+// static void free_nodes(t_list *lst)
+// {
+//     t_list *tmp;
 
-    while (lst)
-    {
-        tmp = lst->next;
-        free(lst);
-        lst = tmp;
-    }
-}
+//     while (lst)
+//     {
+//         tmp = lst->next;
+//         free(lst);
+//         lst = tmp;
+//     }
+// }
 
-static void check(int condition, const char *test)
-{
-    printf("%s: %s\n", condition ? "PASS" : "FAIL", test);
-}
+// static void check(int condition, const char *test)
+// {
+//     printf("%s: %s\n", condition ? "PASS" : "FAIL", test);
+// }
 
 
 
@@ -71,8 +71,8 @@ void ft_lstadd_back(t_list **lst, t_list *new)
         temp=temp->next;
     }
     temp->next=new;
-    print_list(*lst);
-    print_list(temp);
+    // print_list(*lst);
+    // print_list(temp);
 }
 // t_link *h
 

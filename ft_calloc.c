@@ -1,9 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <stdint.h>
-#include <stddef.h>
-#include <limits.h>
+
 
 
 void *ft_calloc(size_t nmemb, size_t size)
@@ -11,11 +6,10 @@ void *ft_calloc(size_t nmemb, size_t size)
     int *ptr;
     int i;
     
-    i=0;
-    ptr=malloc(nmemb*size);
-    if (!ptr){
+    i = 0;
+    ptr = malloc(nmemb*size);
+    if (!ptr)
         return NULL;
-    }
     while(ptr[i])
     {
         ptr[i]=0;
