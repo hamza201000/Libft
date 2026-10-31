@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/30 18:53:59 by haghomar          #+#    #+#             */
+/*   Updated: 2026/10/30 18:54:00 by haghomar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 t_list *ft_lstnew(void *content){
@@ -13,34 +25,3 @@ t_list *ft_lstnew(void *content){
     return Node;
 }
 
-
-
-// int main(void)
-// {
-//     char str[] = "Hello";
-//     t_list *node = ft_lstnew(str);
-
-//     if (node && node->content == str)
-//     {
-//         str[0] = 'Y';
-//         if (((char *)node->content)[0] == 'Y')
-//             printf("PASS: original pointer stored\n");
-//         else
-//             printf("FAIL: content was copied\n");
-//     }
-//     else
-//         printf("FAIL: node creation\n");
-
-//     free(node);
-//     return (0);
-// }
-
-
-// int main ()
-// {
-
-//     t_list *node;
-//     node=ft_lstnew("hello world");
-//     printf("content:%s\n",(char *)node->content);
-//     free(node);
-// }

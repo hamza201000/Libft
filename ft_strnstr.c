@@ -1,5 +1,16 @@
-#include "linft"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/30 18:55:07 by haghomar          #+#    #+#             */
+/*   Updated: 2026/10/30 18:55:08 by haghomar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include "libft.h"
 
 char *ft_strnstr(const char *big, const char *little, size_t len)
 {
@@ -37,50 +48,3 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
     return ptr;
 }
 
-
-void test_strnstr(const char *big, const char *little, size_t len)
-{
-    char *expected;
-    char *result;
-
-    expected = strnstr(big, little, len);
-    result = ft_strnstr(big, little, len);
-
-    if (expected == result)
-        printf("PASS | big: \"%s\" | little: \"%s\" | len: %zu\n",
-            big, little, len);
-    else
-    {
-        printf("FAIL | big: \"%s\" | little: \"%s\" | len: %zu\n",
-            big, little, len);
-        printf("  Expected: %s\n",
-            expected ? expected : "NULL");
-        printf("  Got:      %s\n",
-            result ? result : "NULL");
-    }
-}
-
-int main(void)
-{
-    test_strnstr("Hello World", "World", 11);
-    test_strnstr("Hello World", "World", 10);
-    test_strnstr("Hello World", "Hello", 5);
-    test_strnstr("Hello World", "Hello", 4);
-    test_strnstr("Hello World", "xyz", 11);
-    test_strnstr("Hello World", "", 11);
-    test_strnstr("", "", 0);
-    test_strnstr("", "Hello", 5);
-    test_strnstr("aaaaa", "aaa", 5);
-    test_strnstr("aaaaa", "aaaaaa", 5);
-    test_strnstr("abcdef", "def", 6);
-    test_strnstr("abcdef", "def", 5);
-    test_strnstr("abcabc", "cab", 6);
-    test_strnstr("abcabc", "abc", 3);
-    test_strnstr("abcabc", "abc", 2);
-    test_strnstr("42 school", "school", 9);
-    test_strnstr("42 school", "school", 8);
-    test_strnstr("abcdef", "cd", 0);
-    test_strnstr("abc", "abcd", 3);
-
-    return 0;
-}

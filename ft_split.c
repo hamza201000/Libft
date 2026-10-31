@@ -1,6 +1,16 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/30 18:54:37 by haghomar          #+#    #+#             */
+/*   Updated: 2026/10/30 18:54:38 by haghomar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "libft.h"
 
 char **ft_split_words(char const *s, char c ,char **arr)
