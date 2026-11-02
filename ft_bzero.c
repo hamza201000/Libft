@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:53:15 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 20:14:37 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/01 23:33:14 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,12 @@
 
 void ft_bzero(void *s, size_t n)
 {
-    while(n>0)
+    size_t i;
+
+    i=0;
+    while(n>i)
     {
-        *(unsigned char *)s = 0;
-        s++;
-        n--;
+        ((unsigned char *)s)[i] = 0;
+        i++;   
     }
 }
