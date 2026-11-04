@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:54:49 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/02 23:49:57 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 22:09:35 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i_s2 = 0;
 	i = 0;
-	str = malloc((ft_strlen((char *)s1) + ft_strlen((char *)s2) + 1)
+	str = malloc((ft_strlen(s1) + ft_strlen(s2) + 1)
 			* sizeof(char));
 	if (!str)
 		return (NULL);

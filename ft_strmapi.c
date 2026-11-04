@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:55:02 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 18:55:03 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 22:09:16 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (s == NULL || f == NULL)
 		return (NULL);
 	i = 0;
-	s_len = ft_strlen((char *)s);
+	s_len = ft_strlen(s);
 	str = malloc((s_len + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);

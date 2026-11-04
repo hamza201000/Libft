@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:55:13 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/03 21:00:33 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 22:09:12 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	s_len;
 
 	i = 0;
-	s_len = ft_strlen((char *)s1);
+	s_len = ft_strlen(s1);
 	while (s1[i])
 	{
 		if (ft_check_char(s1[i], set))

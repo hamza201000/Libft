@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:54:44 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/02 20:02:50 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 22:09:49 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(const char *s)
 	int		i;
 	char	*copy;
 
-	copy = malloc((ft_strlen((char *)s) + 1) * sizeof(char));
+	copy = malloc((ft_strlen(s) + 1) * sizeof(char));
 	i = 0;
 	while (s[i] != 0)
 	{

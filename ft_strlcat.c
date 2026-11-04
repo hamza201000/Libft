@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 01:55:21 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/02 20:24:48 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 22:09:28 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	dest_len = 0;
-	src_len = ft_strlen((char *)src);
+	src_len = ft_strlen(src);
 	i = 0;
 	while (dst[dest_len] && dest_len < size)
 		dest_len++;

@@ -6,18 +6,18 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:54:58 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/02 19:59:08 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 22:06:54 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(char *c)
+size_t	ft_strlen(const char *s)
 {
 	size_t	coun;
 
 	coun = 0;
-	while (c[coun] != 0)
+	while (s[coun] != 0)
 	{
 		coun++;
 	}
