@@ -6,18 +6,15 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:55:22 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 19:56:56 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/02 20:25:33 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-
-
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (c>='A'&&c<='Z'){
-        c+=32;
-    }
-    return c;
+	if (c >= 'A' && c <= 'Z')
+	{
+		c += 32;
+	}
+	return (c);
 }

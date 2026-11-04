@@ -6,17 +6,15 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:55:25 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 19:56:42 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/02 20:25:29 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if (c>='a'&&c<='z'){
-        c-=32;
-    }
-    return c;
+	if (c >= 'a' && c <= 'z')
+	{
+		c -= 32;
+	}
+	return (c);
 }

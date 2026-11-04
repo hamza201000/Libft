@@ -6,16 +6,15 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:53:33 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 18:53:34 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/02 20:05:14 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-int ft_isprint(char c)
+int	ft_isprint(char c)
 {
-    if ((c>=0&&c<32)||c==127){
-        return 0;
-    }
-    return 1;
+	if ((c >= 0 && c < 32) || c == 127)
+	{
+		return (0);
+	}
+	return (1);
 }

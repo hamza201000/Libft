@@ -6,19 +6,18 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:54:46 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 18:54:47 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/02 20:34:38 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void ft_striteri(char *s, void (*f)(unsigned int,char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    int i;
+	int	i;
 
-    i=0;
-    while(s[i])
-    {
-        f(i,&s[i]);
-        i++;
-    }
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }

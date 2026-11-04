@@ -6,49 +6,46 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:55:18 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/02 01:33:37 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/03 21:00:42 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-size_t ft_allocation_size(size_t s_len, size_t start, size_t len)
+static size_t	ft_allocation_size(size_t s_len, size_t start, size_t len)
 {
-    size_t sub_len;
+	size_t	sub_len;
 
-    if (start >= s_len)
-        return (1);
-    sub_len = s_len - start;
-    if (len < sub_len)
-        sub_len = len;
-    return (sub_len + 1);
+	if (start >= s_len)
+		return (1);
+	sub_len = s_len - start;
+	if (len < sub_len)
+		sub_len = len;
+	return (sub_len + 1);
 }
 
-
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-    char *sub;
-    size_t i;
-    size_t s_len;
-    size_t size;
+	char	*sub;
+	size_t	i;
+	size_t	s_len;
+	size_t	size;
 
-    s_len=ft_strlen((char *)s);
-    i=0;
-    size=ft_allocation_size(s_len,(size_t)start,len);
-    sub=malloc(size*sizeof(s));
-    if (!sub)
-        return NULL;
-    if (size!=1)
-    {
-        while(i<len&&s[start])
-        {
-            
-            sub[i]=s[start];
-            start++;
-            i++;
-        }
-    }
-    sub[i]=0;
-    return sub;
+	s_len = ft_strlen((char *)s);
+	i = 0;
+	size = ft_allocation_size(s_len, (size_t)start, len);
+	sub = malloc(size * sizeof(s));
+	if (!sub)
+		return (NULL);
+	if (size != 1)
+	{
+		while (i < len && s[start])
+		{
+			sub[i] = s[start];
+			start++;
+			i++;
+		}
+	}
+	sub[i] = 0;
+	return (sub);
 }

@@ -6,16 +6,15 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:53:25 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 18:53:26 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/02 19:58:11 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
-    if (!((c>='a'&&c<='z')||(c>='A'&&c<='Z'))){
-        return 0;
-    }
-    return 1;
+	if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')))
+	{
+		return (0);
+	}
+	return (1);
 }

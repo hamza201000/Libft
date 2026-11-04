@@ -6,18 +6,17 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:53:22 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 21:53:54 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/02 19:58:04 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    if (ft_isalpha(c) == 1 || ft_isdigit(c) == 1)
-    {
-        return 1;
-    }
-    return 0;
+	if (ft_isalpha(c) == 1 || ft_isdigit(c) == 1)
+	{
+		return (1);
+	}
+	return (0);
 }

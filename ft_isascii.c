@@ -6,16 +6,13 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:53:27 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 22:08:35 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/03 20:06:06 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-
-int ft_isascii(char c){
-    if (!(c>=0&&c<=127)){
-        return 0;
-    }
-    return 1;
+int	ft_isascii(int c)
+{
+	if (!(c >= 0 && c <= 127))
+		return (0);
+	return (1);
 }

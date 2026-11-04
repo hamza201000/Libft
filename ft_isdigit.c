@@ -6,16 +6,15 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:53:30 by haghomar          #+#    #+#             */
-/*   Updated: 2026/10/30 18:53:31 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/02 18:45:23 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
-
-int ft_isdigit(int c){
-    if (!(c>='0'&&c<='9')){
-        return 0;
-    }
-    return 1;
+int	ft_isdigit(int c)
+{
+	if (!(c >= '0' && c <= '9'))
+	{
+		return (0);
+	}
+	return (1);
 }
