@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:55:18 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/03 21:00:42 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 18:16:03 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	s_len = ft_strlen((char *)s);
 	i = 0;
 	size = ft_allocation_size(s_len, (size_t)start, len);
-	sub = malloc(size * sizeof(s));
+	sub = malloc(size * sizeof(char));
 	if (!sub)
 		return (NULL);
 	if (size != 1)
