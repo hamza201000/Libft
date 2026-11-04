@@ -6,7 +6,7 @@
 /*   By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 18:54:58 by haghomar          #+#    #+#             */
-/*   Updated: 2026/11/04 22:06:54 by haghomar         ###   ########.fr       */
+/*   Updated: 2026/11/04 22:33:41 by haghomar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ size_t	ft_strlen(const char *s)
 
 	coun = 0;
 	while (s[coun] != 0)
-	{
 		coun++;
-	}
 	return (coun);
 }

@@ -5,12 +5,11 @@
 #                                                     +:+ +:+         +:+      #
 #    By: haghomar <haghomar@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/11/04 22:22:30 by haghomar          #+#    #+#              #
-#    Updated: 2026/11/04 22:22:31 by haghomar         ###   ########.fr        #
+#    Created: 2026/11/04 22:32:59 by haghomar          #+#    #+#              #
+#    Updated: 2026/11/04 22:33:11 by haghomar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
